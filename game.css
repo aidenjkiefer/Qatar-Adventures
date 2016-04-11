@@ -1,0 +1,235 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: auto;
+  color: black;
+  background-color: white;
+  margin-left: 225px;
+  margin-right: 225px;
+  font-size: 36px;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+h3 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	margin-top: auto;
+	color: black;
+	background-color: white;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 18px;
+	border-radius: 8px;
+	padding-top: 12px;
+	padding-bottom: 0px;
+}
+h5 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	margin-top: auto;
+	color: black;
+	background-color: white;
+	margin-left: 225px;
+	margin-right: 225px;
+	font-size: 12px;
+	border-radius: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+p {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	margin-top: auto;
+	color: black;
+	background-color: white;
+	font-size:12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-radius: 16px;
+	margin-left:150px;
+	margin-right:150px;
+}
+.menu {
+  background-color: white;
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  float: left;
+  margin-left: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  list-style-type: none;
+  line-height: 200%;
+  border-radius: 8px;
+}
+li a {
+  list-style-type: none;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-right: 12px;
+  line-height: 200%;
+}
+ul {
+  list-style-type: none;
+}
+.characterForm {
+  background-color: white;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  margin-left: 225px;
+  margin-right: 225px;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.continueButton {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 225px;
+  padding-top: 12px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  font-size: 36px;
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.tutorialPage {
+  background-color: white;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  margin-left: 225px;
+  margin-right: 225px;
+  border-radius: 8px;
+  
+}
+.finishButton {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 200px;
+  padding-top: 12px;
+}
+.purchaseWeaponButton {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 225px;
+  padding-top: 12px;
+  padding-bottom:12px;
+}
+.purchaseArmorButton {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 225px;
+  padding-top: 12px;
+  padding-bottom:12px;
+}
+.purchaseChestButton {
+	text-align: center;
+  text-decoration: none;
+  margin-right: 225px;
+  padding-top: 12px;
+  padding-bottom:12px;
+}
+.chestOpener {
+	background-color: white;
+	text-align: center;
+	margin-left: 250px;
+	margin-right: 250px;
+	padding-bottom: 36px;
+	padding-top: 36px;
+	border-radius: 12px;
+	
+}
+.tooltip {
+    position: relative;
+    display: inline;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptextnormal {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip .tooltiptextrare {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #0099ff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip .tooltiptextuncommon {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #C0C0C0;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip .tooltiptextexotic {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #ffcc00;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptextexotic {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptextnormal {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptextrare {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptextuncommon {
+    visibility: visible;
+}
+
+.inventory {
+	background-color: white;
+	text-align: center;
+	margin-left: 200px;
+	margin-right: 200px;
+	border-radius: 12px;
+}

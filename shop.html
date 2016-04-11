@@ -39,16 +39,22 @@
 		</ul> 
 	</div> 
 	<div class="tutorialPage"> 
-		<h3> Hello! </h3> 
-		<p>Welcome to Qatar Adventure! You are gonna get a tutorial on how to play, but 
-		if at any point you feel ready, go ahead and click the Finish button below. To 
-		get started, why don't we press that Tutorial button down there!! </p> 
+		<h3> Shop </h3> 
+		<p>Welcome to the Shop! Here you can purchase many new and cool things, here's 250 coins on us! </p> 
 	</div> 
-	<div class="continueButton"> 
-		<button type="button" name="continue"><a href="tutorial.html">Tutorial</a></button> 
+	<div class="purchaseWeaponButton"> 
+		<button type="button" name="Weapon" onclick="randomWeapon()">Weapon</button> 
 	</div> 
-	<div class="finishButton"> 
-		<button type="button" name="continue"><a href="main.html">Finish</a></button>
+	<div class="purchaseArmorButton"> 
+		<button type="button" name="Armor" onclick="randomArmor()">Armor</button>
 	</div>
+	<div class="purchaseChestButton">
+		<button type="button" name="Chest" onclick="randomChest()">Chest!</button>
+	</div>
+	<h3>Inventory</h3>
+	<h5 id="gold"></h5>
+	<p id="demo"></p>
+	<script src="game.js">
+	</script>	
 </body>
 </html> 

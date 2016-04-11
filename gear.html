@@ -39,16 +39,37 @@
 		</ul> 
 	</div> 
 	<div class="tutorialPage"> 
-		<h3> Hello! </h3> 
-		<p>Welcome to Qatar Adventure! You are gonna get a tutorial on how to play, but 
-		if at any point you feel ready, go ahead and click the Finish button below. To 
-		get started, why don't we press that Tutorial button down there!! </p> 
+		<h3> Gear </h3> 
+		<p>Welcome to your gear page! Look at your current total inventory and open chests!! </p> 
 	</div> 
-	<div class="continueButton"> 
-		<button type="button" name="continue"><a href="tutorial.html">Tutorial</a></button> 
-	</div> 
-	<div class="finishButton"> 
-		<button type="button" name="continue"><a href="main.html">Finish</a></button>
+	<div class="inventory">
+		<p id="inventory">Inventory
+		<div class= "tooltip"> 
+			<img id="normalChest" ondragstart="drag(event)" src="chest.png" height = "25" width = "25" draggable = "true" ondrop = "openNormalChest()" >
+			<span class= "tooltiptextnormal">Normal Chest</span>
+		</div>
+		<div class= "tooltip">
+			<img id="uncommonChest" ondragstart="drag(event)" src="SilverChest.png" height = "25" width = "25" draggable = "true" >
+			<span class= "tooltiptextuncommon">Uncommon Chest</span>
+		</div>
+		<div class= "tooltip">
+			<img id="rareChest" ondragstart="drag(event)" src="PlatinumChest.png" height = "25" width = "25" draggable = "true" >
+			<span class= "tooltiptextrare">Rare Chest</span>
+		</div>
+		<div class= "tooltip">
+			<img id="exoticChest" ondragstart="drag(event)" src="GoldChest.png" height = "25" width = "25" draggable = "true" >
+			<span class= "tooltiptextexotic">Exotic Chest</span>
+		</div>
+		</p>
+		<script src="game.js">
+		document.getElementById("inventory").innerHTML = inventory;
+		</script>
+		
+	</div>
+	
+	
+	<div class="chestOpener"  id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<h3>Open your chests here!</h3>
 	</div>
 </body>
 </html> 
